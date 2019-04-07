@@ -1,0 +1,7 @@
+set spoolfile = "~/.Mail/gmail/INBOX/"
+set folder = "~/.Mail/gmail/"
+set trash = +Google_Mail.bin/
+mailboxes `~/bin/mutt_mailboxes.sh`
+
+bind index <Esc>N next-unread-mailbox
+bind pager <Esc>N next-unread-mailbox
