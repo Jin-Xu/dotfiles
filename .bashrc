@@ -1,4 +1,8 @@
 #!/bin/bash
+for file in ~/.{extra,bash_prompt,exports,aliases,bash_functions}; do
+    [ -r "$file" ] && source "$file"
+done
+unset file
 source ~/.bash_aliases
 
 HISTCONTROL=ignoreboth
